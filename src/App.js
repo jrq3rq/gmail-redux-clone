@@ -9,7 +9,7 @@ import EmailList from "./components/EmailListFolder/EmailList";
 function App() {
   return (
     <Router>
-      <div className="pp">
+      <div className="app">
         <Header />
         <div className="app__body">
           <Sidebar />
