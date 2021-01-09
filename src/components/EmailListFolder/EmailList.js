@@ -12,6 +12,7 @@ import Section from "../SectionFolder/Section";
 import InboxIcon from "@material-ui/icons/Inbox";
 import PeopleIcon from "@material-ui/icons/People";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
+import EmailRow from "../EmailRowFolder/EmailRow";
 
 const EmailList = () => {
   return (
@@ -48,6 +49,20 @@ const EmailList = () => {
         <Section Icon={InboxIcon} title="Primary" color="red" selected />
         <Section Icon={PeopleIcon} title="Social" color="#1a73e8" />
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
+      </div>
+      <div className="emailList__list">
+        <EmailRow
+          title="Alexa"
+          subject="Hey fellow builder!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Alexa"
+          subject="Hey fellow This is a tesThis is a tesThis is a tesThis is a tesThis is a tesThis is a tes!!!"
+          description="This is a test"
+          time="10pm"
+        />
       </div>
     </div>
   );
