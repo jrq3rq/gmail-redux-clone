@@ -13,11 +13,10 @@ const SendMail = () => {
   const dispatch = useDispatch();
 
   const onSubmit = (formData) => {
-    // console.log(data);
     console.log(formData);
     db.collection("emails").add({
       to: formData.to,
-      subject: formData.message,
+      subject: formData.subject,
       message: formData.message,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
